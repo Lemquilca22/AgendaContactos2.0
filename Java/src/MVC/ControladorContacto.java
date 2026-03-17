@@ -5,12 +5,12 @@ import java.util.ArrayList;
 public class ControladorContacto {
     private Contacto modeloContacto;
     private VistaContacto vista;
+    ArrayList<Contacto> listaContactos = new ArrayList<>(); //Este array guarda objetos
 
     public ControladorContacto(VistaContacto vista) {
         this.modeloContacto = new Contacto("",0,"");
         this.vista = vista;
     }
-    ArrayList<Contacto> listaContactos = new ArrayList<>(); //Este array guarda objetos
 
     public void crearcontacto(ArrayList<Contacto>listaContactos){
         String nombre= vista.pedirString("Nombre: ");
